@@ -1,19 +1,15 @@
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-
+import ArticleSlider from './components/ArticleSlider';
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      
-      <div className="py-20 text-center">
-      </div>
+    return (
+        <main className="min-h-screen bg-white">
+            <Header />
 
-<div className='min-h-screen'> 
+            <ArticleSlider />
 
-</div>
-      <Footer />
-    </main>
-  );
+            <Footer />
+        </main>
+    );
 }
