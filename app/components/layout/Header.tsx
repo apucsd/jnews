@@ -97,7 +97,7 @@ const Header = () => {
 
                 <button 
                     onClick={() => setIsSearchOpen(!isSearchOpen)}
-                    className="hidden md:block"
+                    className="hidden md:block cursor-pointer"
                 >
                     {isSearchOpen ? (
                         <IoCloseOutline className="size-[24px] text-black" />
@@ -117,8 +117,8 @@ const Header = () => {
                             className="w-full bg-[#eeeeee] border border-gray-100 py-3 px-4 pr-12 text-[15px] focus:outline-none focus:border-gray-200 transition-colors"
                             autoFocus={isSearchOpen}
                         />
-                        <button className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors">
-                            <IoSearchOutline className="size-5" />
+                        <button className="absolute cursor-pointer right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black transition-colors">
+                            <IoSearchOutline className="size-5 cursor-pointer" />
                         </button>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ const Header = () => {
                             placeholder="Search..." 
                             className="w-full border rounded-full border-gray-200 py-2 px-5 focus:outline-none focus:border-gray-400 text-[13px] font-normal"
                         />
-                        <IoSearchOutline className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 size-4" />
+                        <IoSearchOutline className="absolute cursor-pointer right-5 top-1/2 -translate-y-1/2 text-gray-400 size-4" />
                     </div>
                     
                     <div className="flex-1">
