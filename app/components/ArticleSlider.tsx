@@ -126,6 +126,9 @@ const ArticleSlider = () => {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
+        touchMove: true,
+        mouseDrag: true,
+        swipeToSlide: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
@@ -144,7 +147,7 @@ const ArticleSlider = () => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 },
             },
             {
