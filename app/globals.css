@@ -13,3 +13,24 @@
     --font-roboto: 'Roboto', sans-serif;
     --font-condensed: 'Roboto Condensed', sans-serif;
 }
+
+.mini-slider-container .slick-track {
+    display: flex !important;
+    align-items: center;
+}
+.mini-slider-container .slick-list {
+    margin: 0 -12px;
+}
+.mini-slider-container .slick-slider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.mini-slider-container .slick-list {
+    flex: 1;
+}
+.mini-slider-container .slick-arrow {
+    position: static;
+    cursor: pointer;
+    transform: none;
+}

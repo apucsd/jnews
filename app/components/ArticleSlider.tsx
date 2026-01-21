@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import Slider from 'react-slick';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import 'slick-carousel/slick/slick.css';
@@ -102,7 +101,7 @@ const articles = [
 const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
         onClick={onClick}
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 hover:bg-white shadow-md transition-all z-10"
+        className="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer right-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 hover:bg-white shadow-md transition-all z-10"
         aria-label="Next"
     >
         <IoIosArrowForward size={24} className="text-gray-600" />
@@ -112,7 +111,7 @@ const NextArrow = ({ onClick }: { onClick?: () => void }) => (
 const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
         onClick={onClick}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 hover:bg-white shadow-md transition-all z-10"
+        className="absolute opacity-0 group-hover:opacity-100 duration-300 cursor-pointer left-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 hover:bg-white shadow-md transition-all z-10"
         aria-label="Previous"
     >
         <IoIosArrowBack size={24} className="text-gray-600" />
@@ -160,7 +159,7 @@ const ArticleSlider = () => {
     };
 
     return (
-        <div className="relative w-full bg-gray-50 border-y border-gray-100">
+        <div className="relative w-full group  bg-gray-50 border-y border-gray-100">
             <Slider {...settings}>
                 {articles.map((article, index) => (
                     <div key={index} className="">

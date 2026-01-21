@@ -44,18 +44,18 @@ const Header = () => {
 
     return (
         <header className="relative bg-white z-60">
-            <div className="flex items-center justify-between h-[70px] md:h-[90px] border-b border-black px-4 relative bg-white z-10">
-                <button onClick={() => setIsMenuOpen(true)} className="md:hidden">
+            <div className="flex items-center justify-between h-[70px] lg:h-[90px] border-b border-black px-4 relative bg-white z-10">
+                <button onClick={() => setIsMenuOpen(true)} className="lg:hidden">
                     <RxHamburgerMenu className="size-[20px] text-black" />
                 </button>
 
                 <div className="flex-1 flex justify-center">
-                    <h1 className="text-2xl md:text-3xl block font-bold font-condensed tracking-tighter ">
+                    <h1 className="text-2xl lg:text-3xl block font-bold font-condensed tracking-tighter ">
                         THE DOWNTOWN
                     </h1>
                 </div>
 
-                <div className="md:hidden ">
+                <div className="lg:hidden ">
                     <button className="cursor-pointer" onClick={() => setIsSearchOpen(!isSearchOpen)}>
                         {isSearchOpen ? (
                             <IoCloseOutline className="size-[24px] text-black" />
@@ -66,8 +66,8 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between px-4 sticky top-0 bg-white z-50 h-[50px] md:h-auto border-b border-gray-100 md:border-none shadow-sm md:shadow-none font-bold">
-                <button onClick={() => setIsMenuOpen(true)} className="hidden md:block cursor-pointer group">
+            <div className="flex items-center justify-between px-4 sticky top-0 bg-white z-50 lg:h-[50px] lg:h-auto border-b border-gray-100 lg:border-none shadow-sm lg:shadow-none font-bold">
+                <button onClick={() => setIsMenuOpen(true)} className="hidden lg:block cursor-pointer group">
                     <div className="flex flex-col gap-1 group-hover:gap-0.5 transition-all duration-300">
                         <span className="w-[20px] block h-[2px] bg-black"></span>
                         <span className="w-[20px] block h-[2px] bg-black"></span>
@@ -75,7 +75,7 @@ const Header = () => {
                     </div>
                 </button>
 
-                <nav className="hidden md:flex space-x-4  font-bold uppercase  tracking-wider py-3 w-full justify-center">
+                <nav className="hidden lg:flex space-x-4  font-bold uppercase  tracking-wider py-3 w-full justify-center">
                     {navItems?.map((item) => (
                         <div key={item.name} className="relative group">
                             <Link
@@ -106,7 +106,7 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="hidden md:block cursor-pointer">
+                <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="hidden lg:block cursor-pointer">
                     {isSearchOpen ? (
                         <IoCloseOutline className="size-[24px] text-black" />
                     ) : (
@@ -116,9 +116,9 @@ const Header = () => {
             </div>
 
             <div
-                className={`absolute left-0 right-0 md:left-auto md:right-4 md:top-full md:w-[400px] bg-white border-b md:border border-gray-100  transition-all duration-300 overflow-visible z-100 ${isSearchOpen ? 'max-h-[150px] opacity-100 py-6 px-4 md:py-4 md:px-4' : 'max-h-0 opacity-0 py-0 px-4 invisible'}`}
+                className={`absolute left-0 right-0 lg:left-auto lg:right-4 lg:top-full lg:w-[400px] bg-white border-b lg:border border-gray-100  transition-all duration-300 overflow-visible z-100 ${isSearchOpen ? 'max-h-[150px] opacity-100 py-6 px-4 lg:py-4 lg:px-4' : 'max-h-0 opacity-0 py-0 px-4 invisible'}`}
             >
-                <div className="hidden md:block absolute -top-2 right-4 w-4 h-4 bg-white rotate-45 border-t border-l border-gray-100" />
+                <div className="hidden lg:block absolute -top-2 right-4 w-4 h-4 bg-white rotate-45 border-t border-l border-gray-100" />
                 <div className="max-w-[400px] mx-auto relative">
                     <div className="relative">
                         <input
